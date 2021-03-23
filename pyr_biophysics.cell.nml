@@ -8,15 +8,12 @@
     <include href="LeakConductance_pyr.channel.nml"/>
     <include href="Na_pyr.channel.nml"/>
 
-    <cell id="pyr_biophysics">
 
-        <notes>Just the biophysics</notes>
+    <include href="pyr_morphology.nml"/>
 
+    <cell id="pyr_biophysics" morphology="pyr_morphology/morph">
 
-        <!--Adding the biophysical parameters-->
-        <morphology id="morph">
-                <notes>None yet...</notes>
-        </morphology>
+        <notes>Just the biophysics below!</notes>
 
         <!--Adding the biophysical parameters-->
 
