@@ -9,9 +9,9 @@
     <include href="Na_pyr.channel.nml"/>
 
 
-    <include href="pyr_morphology.nml"/>
+    <include href="pyr_morphology.cell.nml"/>
 
-    <cell id="pyr_biophysics" morphology="pyr_morphology/morph">
+    <cell id="pyr_biophysics" morphology="pyr_morphology_morph">
 
         <notes>Just the biophysics below!</notes>
 
