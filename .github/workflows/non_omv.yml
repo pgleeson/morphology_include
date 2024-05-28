@@ -29,9 +29,9 @@ jobs:
       run: |
         pip install git+https://github.com/OpenSourceBrain/osb-model-validation
         
-    - name: Install jNeuroML
+    - name: Install pyNeuroML
       run: |
-        omv install jNeuroML
+        omv install pyNeuroML
         
         
     - name: Run test script
