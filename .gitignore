@@ -1,2 +1,10 @@
 *.dat
 /simulator.props
+/arm64
+*.mod
+*code.gen.*
+*_eden.py
+*_netpyne.py
+*_nrn.py
+*.hoc
+/NET_m_in_b_in.net.nml
