@@ -1,0 +1,45 @@
+
+name: Continuous build using OMV
+
+on:
+  push:
+    branches: [ main, development, experimental ]
+  pull_request:
+    branches: [ main, development, experimental ]
+
+jobs:
+  build:
+    name: Py${{ matrix.python-version }}, ${{ matrix.engine}} on ${{ matrix.runs-on }}
+    runs-on: ${{ matrix.runs-on }}
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: [ "3.10" ]
+        engine: [ jNeuroML, jNeuroML_NEURON, jNeuroML_NetPyNE, jNeuroML_validate ]
+        runs-on: [ubuntu-latest, macos-latest ]
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Python  ${{ matrix.python-version }}
+      uses: actions/setup-python@v5
+      with:
+        python-version:  ${{ matrix.python-version }}
+
+    - name: Install HDF5 for pytables on macos-latest
+      if: ${{ matrix.runs-on == 'macos-latest' }}
+      run: |
+        brew install hdf5
+        
+    - name: Install OMV
+      run: |
+        pip install git+https://github.com/OpenSourceBrain/osb-model-validation
+
+    - name: Run OMV tests on engine ${{ matrix.engine }}
+      run: |
+        omv all -V --engine=${{ matrix.engine }}
+
+    - name: OMV final version info
+      run: |
+        omv list -V # list installed engines
+        env
