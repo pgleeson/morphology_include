@@ -3,7 +3,7 @@
 
 
 
-    <morphology id="morphology_pyr_4_sym_soma">
+    <morphology id="morphology_pyr_soma">
 
         <segment id="0" name="soma">
             <proximal x="0.0" y="0.0" z="0.0" diameter="23.0"/>
