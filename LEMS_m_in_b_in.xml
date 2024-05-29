@@ -10,7 +10,7 @@
 
     
         <!--   Cell files-->
-    <Include file="pyr_4_sym_soma.cell.nml"/>
+    <Include file="pyr_soma_m_in_b_in.cell.nml"/>
 
     <pulseGenerator id="Input_3" delay="100.0ms" duration="500.0ms" amplitude="2.0E-4uA"/>
 
