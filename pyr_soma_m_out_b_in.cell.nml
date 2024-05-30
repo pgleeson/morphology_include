@@ -15,7 +15,7 @@
 
     <include href="pyr_4_sym_soma_morph.nml"/>
 
-    <cell id="pyr_4_sym_soma" morphology="morphology_pyr_soma">
+    <cell id="pyr_soma_m_out_b_in" morphology="morphology_pyr_soma">
 
         <notes>A single segment/compartment cell</notes>
 

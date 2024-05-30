@@ -4,7 +4,7 @@
     <include href="pyr_4_sym_soma_morph.nml"/>
     <include href="pyr_biophysics.nml"/>
 
-    <cell id="pyr_4_sym_soma" morphology="morphology_pyr_soma" biophysicalProperties="biophys">
+    <cell id="pyr_soma_m_out_b_out" morphology="morphology_pyr_soma" biophysicalProperties="biophys">
 
         <notes>A single segment/compartment cell</notes>
 

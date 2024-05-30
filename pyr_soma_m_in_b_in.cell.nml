@@ -13,7 +13,7 @@
 
     <include href="Na_pyr.channel.nml"/>
 
-    <cell id="pyr_4_sym_soma">
+    <cell id="pyr_soma_m_in_b_in">
 
         <notes>A single segment/compartment cell</notes>
 
