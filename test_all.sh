@@ -23,4 +23,7 @@ pynml LEMS_m_out_b_out.xml -netpyne -run
 jnml LEMS_pyrfull_in.xml -neuron -run -nogui
 jnml LEMS_pyrfull_in.xml -netpyne -run
 
+jnml LEMS_pyrfull_out.xml -neuron -run -nogui
+jnml LEMS_pyrfull_out.xml -netpyne  -run 
+
 echo "All tests completed!"
