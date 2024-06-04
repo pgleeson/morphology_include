@@ -16,7 +16,7 @@
     <Include file="Na_pyr.channel.nml"/>
     
         <!--   Network files-->
-    <Include file="network_m_out_b_out.net.xml"/>
+    <Include file="network_m_out_b_out.net.nml"/>
     
         <!--Note: this could be: Simulation id="sim1" ... , but Component type="Simulation" ... 
         is used to allow validation of this file according to the LEMS schema specified above...-->
