@@ -32,6 +32,10 @@ jobs:
     - name: Install pyNeuroML
       run: |
         omv install pyNeuroML
+
+        omv install netpyne
+
+        export NEURON_HOME=$pythonLocation
         
         
     - name: Run test script
