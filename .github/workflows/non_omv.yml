@@ -29,17 +29,19 @@ jobs:
       run: |
         pip install git+https://github.com/OpenSourceBrain/osb-model-validation
         
-    - name: Install pyNeuroML
+    - name: Install pyNeuroML and NetPyNE
       run: |
         omv install pyNeuroML
 
         omv install netpyne
 
-        export NEURON_HOME=$pythonLocation
+        env
         
         
     - name: Run test script
       run: |
+
+        export NEURON_HOME=$pythonLocation
         ./test_all.sh
         
     - name: Final version info

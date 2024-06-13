@@ -13,7 +13,6 @@
         <!--Include the generated NeuroML 2 files-->
 
 
-    <Include file="pyr_full_out.cell.nml"/>
     <Include file="pyrfull_out.net.nml"/>
 
     
