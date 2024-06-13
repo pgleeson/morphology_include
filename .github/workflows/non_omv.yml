@@ -33,7 +33,10 @@ jobs:
       run: |
         omv install pyNeuroML
 
+        omv install neuron
         omv install netpyne
+
+        which neuron
 
         env
         
